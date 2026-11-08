@@ -1,0 +1,52 @@
+{
+  "name": "dsh-muse-media",
+  "version": "0.2.0",
+  "private": true,
+  "description": "DeepSeek Harness plugin exposing a local muse2api (muse.ai) reverse proxy as native image/video generation tools; zero-dependency so it loads from a linked directory",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/smoke.mjs"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "muse",
+    "muse2api",
+    "muse.ai",
+    "image-generation",
+    "video-generation",
+    "text-to-video"
+  ],
+  "author": "neozhou2009",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neozhou2009/dsh-muse-media.git"
+  },
+  "bugs": {
+    "url": "https://github.com/neozhou2009/dsh-muse-media/issues"
+  },
+  "homepage": "https://github.com/neozhou2009/dsh-muse-media#readme",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

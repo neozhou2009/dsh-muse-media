@@ -1,0 +1,4 @@
+# muse-media: expose Muse image/video generation as native DSH tools.
+- insert:
+    - id: muse-media
+      name: dsh-muse-media
